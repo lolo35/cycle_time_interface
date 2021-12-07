@@ -1,4 +1,5 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import UpdateCycleTime from './UpdateCycleTime';
 
 export default createStore({
   state: {
@@ -15,5 +16,6 @@ export default createStore({
     }
   },
   modules: {
+    UpdateCycleTime,
   }
 })

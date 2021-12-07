@@ -13,6 +13,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+//     return $router->app->version();
+// });
+$router->get('/lines', ['uses' => 'LinesController@getLinesForAMG']);
+$router->get('/noCTAMG', ['uses' => 'LinesController@getNoCTForAmg']);
+$router->post('/setCycleTimeForPart', ['uses' => "CTController@setCycleTimeForPart"]);
+$router->post('/closeDispatch', ['uses' => "CTController@closeDispatch"]);
+$router->get('/cycleTime', ['uses' => "EditCTController@getCycleTime"]);

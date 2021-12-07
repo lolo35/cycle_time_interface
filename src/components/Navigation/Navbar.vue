@@ -9,9 +9,9 @@
                 <router-link to="/discustionboard"  class="bg-gray-900 hover:bg-gray-700 p-2 rounded cursor-pointer ml-1">Boards</router-link> -->
             </div>
         </nav>
-        <router-link  to="/userSettings" class="w-8 h-8 cursor-pointer">
+        <!-- <router-link  to="/userSettings" class="w-8 h-8 cursor-pointer">
             <img class="rounded-full" :src="`${url}images/no-photo.jpg`" alt="user">
-        </router-link>
+        </router-link> -->
     </header>
 </template>
 

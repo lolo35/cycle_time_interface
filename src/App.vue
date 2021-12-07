@@ -30,6 +30,8 @@ export default {
 		fetchEnv(){
 			if(process.env.NODE_ENV === "development"){
 				this.$store.dispatch('setUrl', "http://localhost/lumen/ct_api/");
+			}else{
+				this.$store.dispatch('setUrl', "http://artl-app04/ctInt/api/public/");
 			}
 		}
 	}
